@@ -7,7 +7,7 @@ on:
 
 jobs:
   llamar-workflow-externo:
-    uses: Thecode42/platform-dummy/.github/workflows/reusable.yml@main
+    uses: Thecode42/platform-dummy/.github/workflows/reusable.yml@master
     with:
       ambiente: production
       mensaje: "Desplegando desde mi-proyecto"
