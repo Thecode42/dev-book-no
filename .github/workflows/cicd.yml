@@ -1,1 +1,13 @@
+name: Llamar Workflow Reusable
 
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  llamar-workflow-externo:
+    uses: Thecode42/platform-dummy/.github/workflows/reusable.yml@main
+    with:
+      ambiente: production
+      mensaje: "Desplegando desde mi-proyecto"
